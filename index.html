@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SunAnime - Watch your favorite anime online. Explore, search, and enjoy a wide variety of anime content.">
+  <title>SunAnime</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="topnav">
+  <div class="nav-left">
+    <a class="active" href="#">Home</a>
+    <a href="about.html">About</a>
+    <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+  </div>
+
+  <div class="nav-right" id="navRight">
+    <button id="darkToggle" class="dark-btn"><i class="fa fa-moon-o"></i> Dark</button>
+    <form class="search-container" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search anime...">
+      <button><i class="fa fa-search"></i></button>
+    </form>
+    <button id="newsletterBtn" class="dark-btn">Subscribe</button>
+    <button id="contactBtn" class="dark-btn">Contact Us</button>
+  </div>
+</nav>
+
+<!-- IMAGE GRID -->
+<section class="image-container">
+  <article>
+    <img src="image/image 1.png" data-name="action" alt="Anime Action" loading="lazy">
+    <div class="image-overlay">Black Clover</div>
+  </article>
+  <article>
+    <img src="image/image 1 (1).png" data-name="adventure" alt="Anime Adventure" loading="lazy">
+    <div class="image-overlay">Bleach</div>
+  </article>
+  <article>
+    <img src="image/image 1 (2).png" data-name="drama" alt="Anime Drama" loading="lazy">
+    <div class="image-overlay">Fire Force</div>
+  </article>
+  <article>
+    <img src="image/image 1 (3).png" data-name="comedy" alt="Anime Comedy" loading="lazy">
+    <div class="image-overlay">Akame ga Kill!</div>
+  </article>
+  <article>
+    <img src="image/image 1 (4).png" data-name="comedy" alt="Anime Comedy" loading="lazy">
+    <div class="image-overlay">Darling in the Franxx</div>
+  </article>
+</section>
+
+<!-- NEWSLETTER MODAL -->
+<div id="newsletterModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Subscribe to SunAnime</h2>
+    <form id="newsletterForm">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- CONTACT FORM MODAL -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Contact SunAnime</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 SunAnime. All Rights Reserved.</p>
+  <div class="social">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
