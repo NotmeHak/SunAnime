@@ -14,3 +14,9 @@ searchInput.addEventListener("input", () => {
     }
   });
 });
+const hamburger = document.querySelector('.hamburger');
+  const navRight = document.getElementById('navRight');
+
+  hamburger.addEventListener('click', () => {
+    navRight.classList.toggle('open');
+  });
