@@ -238,11 +238,33 @@ body.dark .modal-content {
 
 /* MOBILE — KEEP SAME LOOK AS DESKTOP */
 @media (max-width:768px){
-  .topnav { flex-direction: row; }
-  .nav-left, .nav-right { flex-direction: row; width: auto; align-items: center; flex-wrap: wrap; }
-  .topnav a, .dropbtn { width: auto; text-align: center; }
-  .search-container { flex-direction: row; width: auto; }
-  .search-container input, .search-container button { width: auto; }
+  .topnav { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap:6px; 
+    padding:6px 10px; 
+  }
+  .nav-left, .nav-right { 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap:6px; 
+    width:100%;
+  }
+  .topnav a, .dropbtn { 
+    width:auto; 
+    text-align:center; 
+    padding:6px 8px; 
+    font-size:14px;
+  }
+  .search-container { 
+    width:100%; 
+    gap:4px; 
+  }
+  .search-container input, .search-container button { 
+    width:100%; 
+    padding:6px 8px; 
+    font-size:14px;
+  }
   .image-container {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 8px;
@@ -251,5 +273,41 @@ body.dark .modal-content {
     width: 100%;
     height: 220px;
   }
-  .image-container img { width:100%; height:100%; }
+}
+/* TABLET */
+@media (max-width:1024px) and (min-width:769px){
+  .topnav { 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding:8px 12px;
+  }
+  .nav-left, .nav-right { 
+    flex-direction: row; 
+    align-items: center; 
+    gap:6px; 
+    flex-wrap: wrap;
+  }
+  .topnav a, .dropbtn { 
+    padding:8px 10px; 
+    font-size:14px; 
+  }
+  .search-container { 
+    width:auto; 
+    flex-direction: row; 
+    gap:6px; 
+  }
+  .search-container input, .search-container button { 
+    width:auto; 
+    padding:5px 8px; 
+    font-size:14px;
+  }
+  .image-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  .image-container article {
+    width: 100%;
+    height: 250px;
+  }
 }
