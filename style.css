@@ -106,14 +106,14 @@ body {
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills container */
+  object-fit: cover; 
   border-radius: 8px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.06);
   transition: transform 0.22s ease, filter 0.22s ease;
 }
 
 .image-container article:hover img {
-  transform: scale(1.04); /* hover zoom effect */
+  transform: scale(1.04); 
 }
 
 .image-overlay {
@@ -236,8 +236,8 @@ body.dark .modal-content {
   border:1px solid rgba(255,255,255,0.1); 
 }
 
-/* MOBILE — KEEP SAME LOOK AS DESKTOP */
-/* Hamburger - hidden on desktop */
+
+/* Hamburger default */
 .hamburger {
   display: none;
   font-size: 26px;
@@ -246,6 +246,24 @@ body.dark .modal-content {
   cursor: pointer;
   padding: 6px;
 }
+
+/* Mobile Toggle at the Top-right corner */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 14px;
+    z-index: 1100;
+  }
+
+  .topnav {
+    position: relative; 
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
 /* Mobile / Tablet */
 @media (max-width: 768px) {
