@@ -87,8 +87,8 @@ body {
 /* IMAGE GRID */
 .image-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px); /* fixed width per column */
-  justify-content: center; /* center grid */
+  grid-template-columns: repeat(auto-fit, 250px); 
+  justify-content: center;
   gap: 10px;
   width: 100%; 
   margin: 18px auto;
@@ -96,8 +96,8 @@ body {
 
 .image-container article {
   width: 250px;
-  height: 350px; /* tall portrait style */
-  position: relative; /* needed for overlay */
+  height: 350px; 
+  position: relative; 
   overflow: hidden;
   border-radius: 8px;
   background: #fafafa;
@@ -331,7 +331,7 @@ body.dark .modal-content {
   }
   .image-container article {
     width: 100%;
-    height: 220px;
+    height: 300px;
   }
 }
 /* TABLET */
